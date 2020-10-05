@@ -5,6 +5,9 @@
 #ifndef LAB07_FILES_SERIALIZATION_CHRISVARSSAL_PERSON_H
 #define LAB07_FILES_SERIALIZATION_CHRISVARSSAL_PERSON_H
 
+#include <iostream>
+#include <sstream>
+using namespace std;
 
 class Person {
 private:
@@ -20,6 +23,7 @@ public:
     void setId(string);
     string getAge();
     void setAge(int);
+    string toString();
 };
 
 
