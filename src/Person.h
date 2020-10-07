@@ -21,7 +21,7 @@ public:
     void setName(string);
     string getId();
     void setId(string);
-    string getAge();
+    int getAge();
     void setAge(int);
     string toString();
 };
