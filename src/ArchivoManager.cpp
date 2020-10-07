@@ -3,3 +3,11 @@
 //
 
 #include "ArchivoManager.h"
+
+void ArchivoManager::escribirArchivo(IArchivo *archivo) {
+    archivo->escribir();
+}
+
+void ArchivoManager::leerArchivo(IArchivo *archivo) {
+    archivo->leer();
+}
