@@ -5,9 +5,11 @@
 #include "ArchivoManager.h"
 
 void ArchivoManager::escribirArchivo(IArchivo *archivo) {
-    archivo->escribir();
+    Person* _person;
+    archivo->escribir(_person);
 }
 
 void ArchivoManager::leerArchivo(IArchivo *archivo) {
-    archivo->leer();
+    Person* _person;
+    archivo->leer(_person);
 }

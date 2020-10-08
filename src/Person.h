@@ -7,23 +7,18 @@
 
 #include <iostream>
 #include <sstream>
+#include <strings.h>
+#include <vector>
 using namespace std;
 
 class Person {
 private:
-    string name;
-    string id;
+    char name[25];
+    int id;
     int age;
 public:
     Person();
-    Person(string,string,int);
-    string getName();
-    void setName(string);
-    string getId();
-    void setId(string);
-    int getAge();
-    void setAge(int);
-    string toString();
+    Person(string,int,int);
 };
 
 

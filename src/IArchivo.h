@@ -5,12 +5,13 @@
 #ifndef LAB07_FILES_SERIALIZATION_CHRISVARSSAL_IARCHIVO_H
 #define LAB07_FILES_SERIALIZATION_CHRISVARSSAL_IARCHIVO_H
 
+#include "Person.h"
 
 class IArchivo {
 public:
     virtual ~IArchivo();
-    virtual void leer()=0;
-    virtual void escribir()=0;
+    virtual void leer(Person*)=0;
+    virtual void escribir(Person*)=0;
 };
 
 
