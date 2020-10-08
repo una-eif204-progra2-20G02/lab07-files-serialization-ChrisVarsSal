@@ -6,11 +6,15 @@
 #define LAB07_FILES_SERIALIZATION_CHRISVARSSAL_TEXTO_H
 
 #include "IArchivo.h"
+#include "Person.h"
+#include <iostream>
+#include <fstream>
+using namespace std;
 
 class Texto {
 public:
-    void leer();
-    void escribir();
+    void leer(Person*);
+    void escribir(Person*);
 };
 
 
