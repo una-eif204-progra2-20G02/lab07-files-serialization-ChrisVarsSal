@@ -6,7 +6,7 @@
  void Texto::leer(Person* _person) {
     ifstream archivo;
     try{
-        archivo.open("ArchivoTexto.txt",ios::in | ios::app);
+        archivo.open("ArchivoTextoLab7.txt",ios::in | ios::app);
     }
     catch (std::ifstream::failure a) {
         cout<<"No se pudo abrir el archivo";
@@ -19,7 +19,7 @@
 void Texto::escribir(Person *_person) {
     ofstream archivo;
     try {
-        archivo.open("ArchivoTexto.txt",ios::out | ios::app);
+        archivo.open("ArchivoTextoLab7.txt",ios::out | ios::app);
     }
     catch (std::ifstream::failure a) {
         cout<<"No se pudo abrir el archivo";
