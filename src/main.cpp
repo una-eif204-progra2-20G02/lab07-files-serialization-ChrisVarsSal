@@ -5,6 +5,9 @@
 #include "Binario.h"
 #include "Texto.h"
 #include "Person.h"
+#include <../lib/nlohmann/json.hpp>
+#include <fstream>
+using namespace std;
 
 int main(){
     Person* person1 = new Person("Chris",1111,19);
