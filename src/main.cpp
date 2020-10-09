@@ -8,6 +8,7 @@
 #include <../lib/nlohmann/json.hpp>
 #include <fstream>
 using namespace std;
+using json = nlohmann::json;
 
 int main(){
     Person* person1 = new Person("Chris",1111,19);
@@ -37,5 +38,20 @@ int main(){
     binario.leer(person7);
     binario.leer(person8);
 
+    Person per1 = {"Nacho",9999,27};
+    Person per2 = {"Nay",1010,28};
+    Person per3 = {"Mohamed",1212,29};
+
+    /*Serializacion*/
+    json jsonPerson;
+    jsonPerson["Persons"]={
+            {"Person 1: ",per1.getName(),per1.getId(),per1.getAge()},
+            {"Person 2: ",per2.getName(),per2.getId(),per2.getAge()},
+            {"Person 3: ",per3.getName(),per3.getId(),per3.getAge()}
+    };
+    string personSerializable = jsonPerson.dump();
+
+
     return 0;
 }
+
