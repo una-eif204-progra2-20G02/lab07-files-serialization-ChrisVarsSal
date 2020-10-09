@@ -11,3 +11,23 @@ Person::Person(string _name, int _id, int _age) {
     id=_id;
     age=_age;
 }
+
+const char *Person::getName() const {
+    return name;
+}
+
+int Person::getId() const {
+    return id;
+}
+
+void Person::setId(int id) {
+    Person::id = id;
+}
+
+int Person::getAge() const {
+    return age;
+}
+
+void Person::setAge(int age) {
+    Person::age = age;
+}

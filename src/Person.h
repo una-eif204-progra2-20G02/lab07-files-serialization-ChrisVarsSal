@@ -19,6 +19,12 @@ private:
 public:
     Person();
     Person(string,int,int);
+    const char *getName() const;
+    int getId() const;
+    void setId(int);
+    int getAge() const;
+    void setAge(int);
+
 };
 
 
